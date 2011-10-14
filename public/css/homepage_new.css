@@ -1,0 +1,231 @@
+#online_service {
+	width: 230px;
+	float: center;
+	display: inline;
+	margin: 10px 0 0 10px;
+}
+
+#online_service form {
+	background: #FFFFE1;
+	border: 1px solid #000;
+}
+
+#online_service form .message {
+	background: #fff;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	margin: 0 -4px 0 -6px;
+	height: 3.6em;
+}
+
+#online_service form h2 {
+	margin: 0;
+	clear: both;
+	padding: 4px 4px;
+	background: #4C4C82;
+	color: #FFFFE1;
+}
+
+#homepage_login {
+	background: #E7E5E2;
+	font-size: 90%;
+}
+
+#homepage_login form {
+	background: #E7E5E2;
+}
+
+#search {
+	float: center;
+	display: inline;
+	margin: 15em 0 0 10px;
+	padding: 1px 1px 10px;
+}
+
+#search h2 {
+	margin: 0;
+	clear: both;
+	padding: 4px 4px;
+	background: #4C4C82;
+	color: #FFFFE1;
+}
+
+#search form{
+	background: #DAE0D2;
+	font-size: 90%;
+}
+
+#search form h3 {
+	margin: 0;
+	padding: 4px 4px;
+	background: #DAE0D2;
+	color: #57578F;
+}
+
+#search form input {
+	font-size: 90%;
+}
+
+.whatsNew {
+	float: left;
+	margin: 10px 0 0 10px;
+	padding: 1px 1px 10px;
+	font-size: 90%;
+}
+
+.whatsNew h2 {
+	margin: 0;
+	padding: 0;
+	color: #57578F;
+}
+
+.whatsNew a {
+	color: #765;
+}
+
+.whatsNew a:hover {
+	color: #333;
+}
+
+.whatsNew ul {
+	list-style-type: disc;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+.links {
+	float: left;
+	margin: 5px 0 0 5px;
+	padding: 1px 1px 5px;
+	font-size: 90%;
+}
+
+.links h2, h3 {
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+.links a {
+	color: #765;
+}
+
+.links a:hover {
+	color: #333;
+}
+
+.links ul {
+	list-style-type: disc;
+	padding-left: 5px;
+	margin-top: 0;
+}
+
+.links ul li {
+	list-style-type: disc;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+#disclaimer {
+	margin: 0 20px 20px 20px;
+}
+
+#generalInfo {
+	margin: 0 20px 20px 20px;
+}
+
+#layout .leftcol, .rightcol {
+	background: #f4f4f4;
+	width: 25%;
+	vertical-align: top;
+}
+
+#layout .middlecol {
+	width: 50%;
+	vertical-align: top;
+}
+
+.moc ul li a{
+	background: none;
+}
+
+#layout img {
+	width: 235;
+	height: 200;
+}
+
+#homelayout {
+	margin: 0 20px 20px 20px;
+}
+
+#homelayout img {
+	width: 17em;
+	height: 10em;
+}
+
+.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 100%; /*width of menu*/
+	border-bottom: 1px solid #D0D0D0;
+}
+
+.glossymenu a.menuitem{
+	background: #F4F4F4;
+	font: bold 15px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: black;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+}
+
+.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+}
+
+.glossymenu a.menuitem:hover{
+	background: #D0D0D0;
+}
+
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: white;
+}
+
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.glossymenu div.submenu ul li{
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #D0D0D0;
+	display: block;
+	font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	padding-left: 15px;
+}
+
+.glossymenu div.submenu ul li a{
+	display: block;
+	color: black;
+	font-weight: normal;
+}
+
+.glossymenu div.submenu ul li a:hover{
+	background: #DFDCCB;
+	colorz: white;
+}

@@ -1,0 +1,36 @@
+.disclaimer {
+	color:#F00;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.center form {
+	background: #FFFFE1;
+	border: 1px solid #000;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.center h2 {
+	margin: 0;
+	clear: both;
+	padding: 4px 4px;
+	background: #4C4C82;
+	color: #FFFFE1;
+}
+
+.formtable {
+	float: center;
+	margin: 10px 0 0 10px;
+}
+
+.certtable {
+	table-layout: fixed;
+	width:100%
+}
+
+.certtable th {
+	font-weight:bold;
+	text-decoration:underline
+}

@@ -1,0 +1,182 @@
+#online_service {
+	float: left;
+	width: 230px;
+	display: inline;
+	margin: 10px 0 0 10px;
+	font-size: 90%;
+}
+
+#online_service form {
+	background: #FFFFE1;
+	border: 1px solid #000;
+}
+
+#online_service form input {
+	font-size: 90%;
+}
+
+#online_service form .message {
+	background: #fff;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	margin: 0 -4px 0 -6px;
+	height: 3.6em;
+}
+
+#online_service form h2 {
+	margin: 0;
+	clear: both;
+	padding: 4px 4px;
+	background: #34497E;
+	color: #FFFFE1;
+}
+
+#search {
+	margin: 15em 0 0 10px;
+	width: 230px;
+	padding: 1px 1px 10px;
+}
+
+#search form{
+	background: #DAE0D2;
+	font-size: 90%;
+}
+
+#search form h3 {
+	margin: 0;
+	padding: 4px 4px;
+	background: #DAE0D2;
+	color: #57578F;
+}
+
+#search form input {
+	font-size: 90%;
+}
+
+.whatsNew {
+	float: left;
+	margin: 10px 0 0 10px;
+	padding: 1px 1px 10px;
+	font-size: 90%;
+}
+
+.whatsNew h2 {
+	margin: 0;
+	padding: 0;
+	color: #57578F;
+}
+
+.whatsNew a {
+	color: #765;
+}
+
+.whatsNew a:hover {
+	color: #333;
+}
+
+.whatsNew ul {
+	list-style-type: disc;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+.links {
+	float: left;
+	margin: 5px 0 0 5px;
+	padding: 1px 1px 5px;
+	font-size: 90%;
+}
+
+.links h2, h3 {
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+.links a {
+	color: #765;
+}
+
+.links a:hover {
+	color: #333;
+}
+
+.links ul {
+	list-style-type: disc;
+	padding-left: 5px;
+	margin-top: 0;
+}
+
+.links ul li {
+	list-style-type: disc;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+#disclaimer {
+	margin: 0 20px 20px 20px;
+}
+
+#generalInfo {
+	margin: 0 20px 20px 20px;
+}
+
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+/* column container */ 
+.colmask {
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:right;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+								only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#f4f4f4;		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	background:#fff;		/* center column background colour */
+}
+.threecol .colleft {
+	right:50%;			/* width of the middle column */
+	background:#f4f4f4;	/* left column background colour */
+}
+.threecol .col1 {
+	width:46%;			/* width of center column content (column width minus padding on either side) */
+	left:102%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:24%;			/* Width of left column content (column width minus padding on either side) */
+	left:29%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:24%;			/* Width of right column content (column width minus padding on either side) */
+	left:80%;			/* Please make note of the brackets here:
+							(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}

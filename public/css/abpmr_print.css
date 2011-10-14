@@ -1,0 +1,245 @@
+
+/********************************************************/
+/* Style sheet used for media="print" with ABPMR pages. */
+/*                                                      */
+/* This is the "normal" abpmr.css style sheet with      */
+/*   modifications made for use when printing.          */
+/********************************************************/
+
+
+/********************************************************/
+/* Define the "normal" sections of the abpmr.css style  */
+/*   sheet with modifications made for printing.        */
+/********************************************************/
+body {
+ 	width: 7in  font-family: tahoma, verdana, arial, sans-serif;
+	color: #555;
+	margin: 0;
+	padding: 0;
+}
+
+#page {
+	border:0 !important;
+	width: 7in;
+}
+
+table {
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 80%;
+}
+
+table table {
+	font-size: 100%;
+}
+
+table p {
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 150%;
+	font-family: arial;
+	margin: 10px 0 5px;
+}
+
+h2 {
+	font-size: 120%;
+	margin: 10px 0 5px;
+}
+
+h3, h4, h5, h6 {
+	font-size: 100%;
+	margin: 0;
+}
+
+p {
+	font-size: 80%;
+}
+
+a {
+	font-weight: bold;
+	color: #33a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #999;
+}
+
+.formwhite {
+	background-color: #fff;
+}
+
+.formbutton {
+	font-weight: bold;
+	color: #007;
+	border: 1px solid #aaa;
+	background-color: #eee;
+}
+
+.formcolor_required {
+	background-color: #ddd;
+	border: 1px dotted #000;
+}
+
+.formcolor_needinfo {
+	font-weight: bold;
+	color: #000;
+	background-color: #fcc;
+	border: 1px solid #d99;
+}
+
+#header {
+	display: none
+}
+
+#titleBar {
+	display: none
+}
+
+#topNav {
+	display: none
+}
+
+#leftNav {
+	display: none
+}
+
+#content {
+	margin: 0 30px 30px;
+	height: auto !important;
+	/*width: 500px !important;*/
+	float: left !important;
+	min-height: 500px;
+	height: 500px;
+	width: auto;
+	float: none;
+}
+
+#heading {
+	display: none
+}
+
+#footer {
+	display: none
+}
+
+#disclaimer {
+	display: none
+}
+
+form {
+	border: none !important;
+}
+
+table td {
+	border: none !important;	
+}
+
+.leftcol {
+	display: none
+}
+
+.urgent, .message {
+	padding: 5px;
+	color: #000;
+}
+
+.urgent {
+	border: 1px solid #d60;
+	background: #ffe9aa;
+}
+
+.message {
+	border: 1px solid #77d;
+	background: #e6eeff;
+}
+
+#screenBody {
+	display: none
+}
+
+/*****************************/
+/*   Primary font size specs */
+/*****************************/
+
+.strikethrough {
+	text-decoration : line-through;
+}
+
+.font_enormous {
+	font-family : tahoma, verdana, arial, sans-serif;
+	font-size: 16pt;
+}
+
+.font_gigantic {
+	font-family : tahoma, verdana, arial, sans-serif;
+	font-size : 16pt;
+}
+
+.font_huge {
+	font-family : tahoma, verdana, arial, sans-serif;
+	font-size : 14pt;
+}
+
+.font_big {
+	font-size : 12pt;
+	font-family : tahoma, verdana, arial, sans-serif;
+}
+
+.font_normal {
+	font-size : 10pt;
+	font-family : tahoma, verdana, arial, sans-serif;
+}
+
+.font_small {
+	font-size : 9pt;
+	font-family : tahoma, verdana, arial, sans-serif;
+}
+
+.font_tiny {
+	font-size : 8pt;
+	font-family : tahoma, verdana, arial, sans-serif;
+}
+
+.font_medium {
+	font-family : tahoma, verdana, arial, sans-serif;
+	font-size : 10pt;
+}
+
+.font_microscopic {
+	font-size : 7pt;
+}
+
+/***********************************/
+/* Add "print only" page sections. */
+/***********************************/
+#printBody, #printBodynew {
+	display: block
+}
+
+#pageBreak {
+	page-break-after: always
+}
+
+#noprint {
+	display:none;
+}
+
+/*****************************/
+/*   For MOC table           */
+/*****************************/
+
+.mocTable {
+	border-left : 1px solid #AAA;
+	border-bottom : 1px solid #AAA;
+}
+
+.mocTable td {
+	border-right : 1px solid #AAA;
+	border-top : 1px solid #AAA;
+}
+
+#tabnav { /* hide the new tabbed navigation for MOC section JLB 7/2008*/
+	display:none;
+}
