@@ -1,0 +1,13 @@
+<header>
+  <!-- image call - Put the logo in public/images so that Rails can find it.-->
+  <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+  <nav class="round">
+    <ul>
+      <!-- link_to is the same as an "a href" tag in html where the first argument is the 
+          text and the second argument is the URL -->
+      <li><%= link_to "Home", '#' %></li>
+      <li><%= link_to "Help", '#' %></li>
+      <li><%= link_to "Sign in", '#' %></li>
+    </ul>
+  </nav>
+</header>

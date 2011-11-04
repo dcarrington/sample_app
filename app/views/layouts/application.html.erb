@@ -3,17 +3,9 @@
   <head>
     <title><%= title %></title>
     <%= csrf_meta_tag %>
-    <!-- syntax is not part of Rails; it’s actually a conditional comment supported 
-    	by Internet Explorer browsers for just this sort of situation. It’s a good thing, 
-    	too, because it means we can include the extra stylesheet only for IE browsers less 
-    	than version 9, leaving other browsers such as Firefox, Chrome, and Safari unaffected. -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-    <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+    <!--The effect of this line is to look for a file called app/views/layouts/_stylesheets.html.erb, 
+    	evaluate its contents, and insert the results into the view.-->
+    <%= render 'layouts/stylesheets' %>
   </head>
   <body>
   	<!-- The div tag in HTML is a generic division; it doesn’t do anything apart from 
@@ -24,23 +16,11 @@
   		useful for styling with CSS (Section 5.1.2). The main difference between classes and 
   		ids is that classes can be used multiple times on a page, but ids can only be used once.-->    
     <div class="container">
-      <header>
-      	<!-- image call -->
-        <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
-        <!-- site navigation -->
-        <nav class="round">
-          <ul>
-          	<!-- link_to is the same as an "a href" tag in html where the first argument is the 
-          		text and the second argument is the URL -->
-            <li><%= link_to "Home", '#' %></li>
-            <li><%= link_to "Help", '#' %></li>
-            <li><%= link_to "Sign in", '#' %></li>
-          </ul>
-        </nav>
-      </header>
+      <%= render 'layouts/header' %>
       <section class="round">
         <%= yield %>
       </section>
+      <%= render 'layouts/footer' %>
     </div>
   </body>
 </html>

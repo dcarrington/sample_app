@@ -1,0 +1,12 @@
+<!-- syntax is not part of Rails; it’s actually a conditional comment supported 
+    	by Internet Explorer browsers for just this sort of situation. It’s a good thing, 
+    	too, because it means we can include the extra stylesheet only for IE browsers less 
+    	than version 9, leaving other browsers such as Firefox, Chrome, and Safari unaffected. -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+<%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+<!-- css stylesheets by default should be in public/stylesheets-->
+<%= stylesheet_link_tag 'custom', :media => 'screen' %>
